@@ -1,0 +1,12 @@
+Package: urxinput
+Version: 0.1.0
+Section: utils
+Priority: optional
+Architecture: amd64
+Maintainer: Vince Shields
+Depends: xinput
+Description: Terminal UI for managing XInput devices
+ urxinput provides a terminal-based user interface for enabling and
+ disabling XInput devices. It allows easy management of input devices
+ such as mice, keyboards, and touchpads through a simple ncurses-like
+ interface powered by urwid.

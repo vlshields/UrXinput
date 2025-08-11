@@ -85,7 +85,7 @@ class XInputToggler:
         elif key in ('y', 'Y', 'n', 'N'):
             focus_widget, idx = self.listbox.get_focus()
             if idx is None or idx < 2:
-                return  
+                return  # Ignore header and divider
             device = self.devices[idx - 2]
             set_device_enabled(device["id"], key.lower() == 'y')
             self.build_menu()
